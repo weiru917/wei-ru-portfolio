@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wei Ru’s Studio — Code, Music & Curiosity</title>
+<meta name="description" content="Tan Wei Ru, final-year Software Engineering student at Universiti Malaya. Explore mobile, AI, data, and solo game projects.">
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="container">
+<nav aria-label="Main navigation">
+<a href="#" class="logo">wei ru’s studio<i> ✿</i>
+</a>
+<div class="navlinks">
+<a href="#work">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#beyond">My world</a>
+<a href="#contact" class="navcontact">Say hello ↗</a>
+</div>
+<button class="musicbutton" id="musicButton" aria-pressed="false">♫ Music off</button>
+</nav>
+<main>
+<section class="hero">
+<div>
+<span class="introchip">Final-year software engineering · Universiti Malaya</span>
+<h1>A little code.<br>A little music.<br>
+<em>A lot of curiosity.</em>
+</h1>
+<p class="roleline">Software engineering student · Mobile, full-stack &amp; AI</p>
+<p>Hi, I’m Wei Ru <span class="wavehand">👋</span>
+<br>I like turning ideas into useful apps—and leaving room for creativity, play, and the occasional cat.</p>
+<div class="actions">
+<a href="#work" class="btn">Explore my projects ↗</a>
+<button class="btn secondary" id="resumeButton">Meet my résumé ↓</button>
+</div>
+<div class="socialrow" aria-label="Find me online">
+<a class="sociallink" href="https://github.com/weiru917" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.07c-3.08.67-3.73-1.3-3.73-1.3-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.07-.68.07-.68 1.11.08 1.69 1.14 1.69 1.14.99 1.69 2.6 1.2 3.23.92.1-.72.39-1.2.71-1.48-2.46-.28-5.05-1.23-5.05-5.49 0-1.22.44-2.21 1.14-2.99-.11-.28-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.64 10.64 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.6 1.53.22 2.66.11 2.94.71.78 1.14 1.77 1.14 2.99 0 4.27-2.59 5.2-5.06 5.48.4.35.75 1.02.75 2.06v3.06c0 .3.2.65.76.54A11.1 11.1 0 0 0 12 .9Z"/>
+</svg>GitHub ↗</a>
+<a class="sociallink" href="https://www.linkedin.com/in/tanweiru917" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="1" y="1" width="22" height="22" rx="4" fill="currentColor"/>
+<circle cx="6.5" cy="7" r="1.6" fill="#fffdf9"/>
+<path d="M5 10h3v9H5zM10 10h2.8v1.2c.6-.9 1.5-1.5 2.8-1.5 2.5 0 3.5 1.5 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2-1.2 0-1.5.9-1.5 2.2V19h-3z" fill="#fffdf9"/>
+</svg>LinkedIn ↗</a>
+<a class="sociallink" href="mailto:tanweiru2004@gmail.com">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="2" y="4" width="20" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>Email me</a>
+</div>
+<div class="herofoot">
+<span>Seeking internship opportunities</span>
+<span>Expected graduation · 2027</span>
+</div>
+</div>
+<div class="heroart">
+<img class="studioimg" id="studioImg" src="./assets/images/studio-hero.jpg" alt="A playful clay-style studio with a computer, cat, piano keyboard, camera and plant">
+<span class="sticker star" aria-hidden="true">✦</span>
+<span class="sticker bottom">Welcome to my little corner ♡</span>
+</div>
+</section>
+
+<section id="work" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">01 / In the spotlight <span class="scribble">✦</span>
+</div>
+<h2>Things I’ve been building.</h2>
+</div>
+<p>Three different sides of my work. Pick a card to explore.</p>
+</div>
+<div class="featuredprojects">
+<button class="project featuredcard" data-project="pulse" data-category="mobile ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for PulseCheck">
+<defs>
+<linearGradient id="art-pulse" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#f484a2"/>
+</linearGradient>
+<filter id="shadow-pulse" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#f484a2" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#ffe2e7"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#f484a2" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-pulse)" transform="rotate(-8 200 125)">
+<rect x="132" y="28" width="132" height="181" rx="23" fill="#fffdf8" stroke="#f484a2" stroke-width="5"/>
+<rect x="178" y="36" width="40" height="6" rx="3" fill="#f484a2"/>
+<rect x="147" y="57" width="102" height="74" rx="13" fill="#ffe2e7"/>
+<text x="198" y="108" text-anchor="middle" font-family="Arial" font-size="43" fill="#f484a2">♡</text>
+<path d="M147 155h20l6-11 9 26 10-33 9 18h47" stroke="#f484a2" stroke-width="4" fill="none" stroke-linejoin="round"/>
+<rect x="147" y="179" width="102" height="12" rx="6" fill="#f484a2"/>
+</g>
+<circle cx="289" cy="141" r="28" fill="#fffdf8"/>
+<text x="289" y="151" text-anchor="middle" font-size="30" fill="#f484a2">✦</text>
+</svg>
+<span class="badge">Ongoing</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>PulseCheck</h3>
+<span>↗</span>
+</div>
+<p>A mobile cardiac-health application combining CVD risk prediction, explainable risk factors, and PPG signal processing.</p>
+<div class="tags">
+<span>Flutter</span>
+<span>FastAPI</span>
+<span>XGBoost</span>
+</div>
+</div>
+</button>
+<button class="project featuredcard" data-project="aegis" data-category="web ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for AegisAI">
+<defs>
+<linearGradient id="art-aegis" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#8675dc"/>
+</linearGradient>
+<filter id="shadow-aegis" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#8675dc" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#dfddff"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#8675dc" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-aegis)">
+<rect x="87" y="55" width="218" height="140" rx="23" fill="#fffdf9" stroke="#8675dc" stroke-width="5"/>
+<rect x="103" y="71" width="186" height="108" rx="12" fill="#dfddff"/>
+<path d="M195 84l40 14v31q-2 27-40 38-38-11-40-38V98z" fill="#8675dc"/>
+<path d="M177 124l13 13 24-29" fill="none" stroke="#fffdf9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M143 204h107" stroke="#8675dc" stroke-width="12" stroke-linecap="round"/>
+</g>
+<circle cx="324" cy="127" r="20" fill="#ffe6a5"/>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>AegisAI</h3>
+<span>↗</span>
+</div>
+<p>A vendor-neutral enterprise AI governance gateway with sensitive-data masking, model routing, audit logging, and compliance reporting.</p>
+<div class="tags">
+<span>Python</span>
+<span>FastAPI</span>
+<span>React</span>
+</div>
+</div>
+</button>
+<button class="project featuredcard" data-project="kitchen" data-category="games ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for Rhythm Kitchen">
+<defs>
+<linearGradient id="art-kitchen" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#e4a361"/>
+</linearGradient>
+<filter id="shadow-kitchen" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#e4a361" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#ffe8c7"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#e4a361" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-kitchen)">
+<rect x="91" y="63" width="204" height="126" rx="20" fill="#fffdf4" stroke="#e4a361" stroke-width="5"/>
+<rect x="105" y="78" width="175" height="95" rx="12" fill="#ffe8c7"/>
+<ellipse cx="193" cy="130" rx="42" ry="30" fill="#fffdf4" stroke="#e4a361" stroke-width="4"/>
+<circle cx="181" cy="124" r="11" fill="#e7906d"/>
+<path d="M195 120q28-19 25 9-20 12-25-9" fill="#94b67b"/>
+<path d="M170 145h36" stroke="#efc775" stroke-width="7" stroke-linecap="round"/>
+<rect x="158" y="191" width="72" height="12" rx="5" fill="#e4a361"/>
+<rect x="154" y="39" width="77" height="35" rx="17" fill="#fffdf4"/>
+<circle cx="192" cy="55" r="10" fill="#696493"/>
+</g>
+<path d="M323 143q-3-46-10-39-3 3 0 22-28-36-29-20-1 5 17 33-34-22-31-8 8 14 24 29-29-5-21 6 13 15 33 17 30-14 17-40" fill="#f1bc9d"/>
+</svg>
+<span class="badge">Solo project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>Rhythm Kitchen</h3>
+<span>↗</span>
+</div>
+<p>A webcam-controlled cooking game using MediaPipe mesh tracking.</p>
+<div class="tags">
+<span>MediaPipe</span>
+<span>Webcam</span>
+<span>Computer vision</span>
+</div>
+</div>
+</button>
+</div>
+</section>
+<section id="all-projects" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">02 / The project shelf</div>
+<h2>A whole shelf of ideas.</h2>
+</div>
+<p>
+<span id="projectCount">10 projects</span> · Solo builds, team projects, and coursework.</p>
+</div>
+<div class="filters" aria-label="Filter projects">
+<button class="filter active" data-filter="all" aria-pressed="true">All projects</button>
+<button class="filter " data-filter="mobile" aria-pressed="false">Mobile</button>
+<button class="filter " data-filter="web" aria-pressed="false">Web</button>
+<button class="filter " data-filter="ai" aria-pressed="false">AI & data</button>
+<button class="filter " data-filter="games" aria-pressed="false">Games</button>
+</div>
+<div class="projects">
+<button class="project librarycard" data-project="pulse" data-category="mobile ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for PulseCheck">
+<defs>
+<linearGradient id="art-pulse" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#f484a2"/>
+</linearGradient>
+<filter id="shadow-pulse" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#f484a2" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#ffe2e7"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#f484a2" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-pulse)" transform="rotate(-8 200 125)">
+<rect x="132" y="28" width="132" height="181" rx="23" fill="#fffdf8" stroke="#f484a2" stroke-width="5"/>
+<rect x="178" y="36" width="40" height="6" rx="3" fill="#f484a2"/>
+<rect x="147" y="57" width="102" height="74" rx="13" fill="#ffe2e7"/>
+<text x="198" y="108" text-anchor="middle" font-family="Arial" font-size="43" fill="#f484a2">♡</text>
+<path d="M147 155h20l6-11 9 26 10-33 9 18h47" stroke="#f484a2" stroke-width="4" fill="none" stroke-linejoin="round"/>
+<rect x="147" y="179" width="102" height="12" rx="6" fill="#f484a2"/>
+</g>
+<circle cx="289" cy="141" r="28" fill="#fffdf8"/>
+<text x="289" y="151" text-anchor="middle" font-size="30" fill="#f484a2">✦</text>
+</svg>
+<span class="badge">Ongoing</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>PulseCheck</h3>
+<span>↗</span>
+</div>
+<p>A mobile cardiac-health application combining CVD risk prediction, explainable risk factors, and PPG signal processing.</p>
+<div class="tags">
+<span>Flutter</span>
+<span>FastAPI</span>
+<span>XGBoost</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="aegis" data-category="web ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for AegisAI">
+<defs>
+<linearGradient id="art-aegis" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#8675dc"/>
+</linearGradient>
+<filter id="shadow-aegis" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#8675dc" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#dfddff"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#8675dc" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-aegis)">
+<rect x="87" y="55" width="218" height="140" rx="23" fill="#fffdf9" stroke="#8675dc" stroke-width="5"/>
+<rect x="103" y="71" width="186" height="108" rx="12" fill="#dfddff"/>
+<path d="M195 84l40 14v31q-2 27-40 38-38-11-40-38V98z" fill="#8675dc"/>
+<path d="M177 124l13 13 24-29" fill="none" stroke="#fffdf9" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M143 204h107" stroke="#8675dc" stroke-width="12" stroke-linecap="round"/>
+</g>
+<circle cx="324" cy="127" r="20" fill="#ffe6a5"/>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>AegisAI</h3>
+<span>↗</span>
+</div>
+<p>A vendor-neutral enterprise AI governance gateway with sensitive-data masking, model routing, audit logging, and compliance reporting.</p>
+<div class="tags">
+<span>Python</span>
+<span>FastAPI</span>
+<span>React</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="kitchen" data-category="games ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for Rhythm Kitchen">
+<defs>
+<linearGradient id="art-kitchen" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#e4a361"/>
+</linearGradient>
+<filter id="shadow-kitchen" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#e4a361" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#ffe8c7"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#e4a361" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-kitchen)">
+<rect x="91" y="63" width="204" height="126" rx="20" fill="#fffdf4" stroke="#e4a361" stroke-width="5"/>
+<rect x="105" y="78" width="175" height="95" rx="12" fill="#ffe8c7"/>
+<ellipse cx="193" cy="130" rx="42" ry="30" fill="#fffdf4" stroke="#e4a361" stroke-width="4"/>
+<circle cx="181" cy="124" r="11" fill="#e7906d"/>
+<path d="M195 120q28-19 25 9-20 12-25-9" fill="#94b67b"/>
+<path d="M170 145h36" stroke="#efc775" stroke-width="7" stroke-linecap="round"/>
+<rect x="158" y="191" width="72" height="12" rx="5" fill="#e4a361"/>
+<rect x="154" y="39" width="77" height="35" rx="17" fill="#fffdf4"/>
+<circle cx="192" cy="55" r="10" fill="#696493"/>
+</g>
+<path d="M323 143q-3-46-10-39-3 3 0 22-28-36-29-20-1 5 17 33-34-22-31-8 8 14 24 29-29-5-21 6 13 15 33 17 30-14 17-40" fill="#f1bc9d"/>
+</svg>
+<span class="badge">Solo project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>Rhythm Kitchen</h3>
+<span>↗</span>
+</div>
+<p>A webcam-controlled cooking game using MediaPipe mesh tracking.</p>
+<div class="tags">
+<span>MediaPipe</span>
+<span>Webcam</span>
+<span>Computer vision</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="wick" data-category="mobile ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Calendar workload, stress gauge and pause button">
+<defs>
+<filter id="shadow-wick" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#82b99d" flood-opacity=".3"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#dfeedd"/>
+<ellipse cx="200" cy="216" rx="120" ry="10" fill="#82b99d" opacity=".15"/>
+<circle cx="51" cy="40" r="14" fill="#fffdf8" opacity=".45"/>
+<path d="M345 32l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-wick)">
+<rect x="74" y="47" width="170" height="150" rx="18" fill="#fffdf8" stroke="#82b99d" stroke-width="4"/>
+<rect x="89" y="63" width="139" height="23" rx="8" fill="#dfeedd"/>
+<text x="104" y="79" fill="#567f65" font-family="Arial" font-size="11" font-weight="bold">THIS WEEK</text>
+<path d="M108 40v20m96-20v20" stroke="#82b99d" stroke-width="9" stroke-linecap="round"/>
+<g fill="#b8d3ac">
+<rect x="90" y="99" width="35" height="22" rx="5"/>
+<rect x="135" y="99" width="35" height="22" rx="5"/>
+<rect x="180" y="99" width="35" height="22" rx="5"/>
+<rect x="90" y="133" width="35" height="22" rx="5"/>
+</g>
+<rect x="135" y="133" width="35" height="22" rx="5" fill="#e9b88f"/>
+<rect x="180" y="133" width="35" height="22" rx="5" fill="#dfa3a4"/>
+<path d="M92 173h112" stroke="#dfeedd" stroke-width="7" stroke-linecap="round"/>
+<circle cx="280" cy="127" r="43" fill="#fffdf8" stroke="#82b99d" stroke-width="4"/>
+<path d="M251 133a30 30 0 0 1 58 0" fill="none" stroke="#d5e8c8" stroke-width="10" stroke-linecap="round"/>
+<path d="M280 133l20-17" stroke="#cf8f85" stroke-width="4" stroke-linecap="round"/>
+<circle cx="280" cy="133" r="5" fill="#cf8f85"/>
+<text x="280" y="154" text-anchor="middle" fill="#697f66" font-family="Arial" font-size="9">LOAD + STRESS</text>
+<rect x="251" y="178" width="57" height="24" rx="12" fill="#efd0c6"/>
+<path d="M274 184v12m10-12v12" stroke="#9f7771" stroke-width="4" stroke-linecap="round"/>
+</g>
+<path d="M275 53l-6-8 10-9-6-8m29 30 8-10-8-9" fill="none" stroke="#9baf95" stroke-width="3" stroke-linecap="round"/>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>Wick</h3>
+<span>↗</span>
+</div>
+<p>A mobile stress and workload manager connecting camera sensing, focus sessions and community features.</p>
+<div class="tags">
+<span>React Native</span>
+<span>Expo</span>
+<span>PPG / rPPG</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="geo" data-category="ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Telecommunication tower, mapped spatial cells and QoE signal bars">
+<defs>
+<filter id="shadow-geo" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#83afd9" flood-opacity=".3"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#dceeff"/>
+<ellipse cx="200" cy="216" rx="120" ry="10" fill="#83afd9" opacity=".15"/>
+<circle cx="51" cy="40" r="14" fill="#fffdf8" opacity=".45"/>
+<path d="M345 32l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-geo)">
+<path d="M65 89l68-18 74 17 77-19v122l-77 19-74-19-68 17z" fill="#fffdf5" stroke="#83afd9" stroke-width="3"/>
+<path d="M133 72v117m74-101v119" stroke="#83afd9" stroke-width="2" opacity=".45"/>
+<path d="M81 151q45-57 85-12t102-29" fill="none" stroke="#83afd9" stroke-width="9" opacity=".3"/>
+<g fill="#bedccc" stroke="#ffffff" stroke-width="2">
+<path d="M116 116l13-7 13 7v15l-13 7-13-7z"/>
+<path d="M142 116l13-7 13 7v15l-13 7-13-7z"/>
+<path d="M129 138l13-7 13 7v15l-13 7-13-7z"/>
+<path d="M155 138l13-7 13 7v15l-13 7-13-7z"/>
+</g>
+<path d="M194 172l29-100 29 100m-47-34h37m-30-26h23m-35 64h57" stroke="#6b91bc" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="223" cy="72" r="6" fill="#7c79b1"/>
+<path d="M203 59q-18 14 0 29m40-29q18 14 0 29m-51-40q-30 25 0 48m62-48q30 25 0 48" stroke="#9e9acf" stroke-width="3" fill="none" stroke-linecap="round"/>
+<rect x="281" y="104" width="66" height="83" rx="13" fill="#fffdf8" stroke="#83afd9" stroke-width="3"/>
+<text x="314" y="126" text-anchor="middle" fill="#668ba9" font-family="Arial" font-size="14" font-weight="bold">QoE</text>
+<path d="M296 161v-10m12 10v-19m12 19v-28m12 28v-35" stroke="#83afd9" stroke-width="7" stroke-linecap="round"/>
+<circle cx="314" cy="176" r="3" fill="#83afd9"/>
+</g>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>GeoQoE Pulse</h3>
+<span>↗</span>
+</div>
+<p>A completed team project for network-quality intelligence, built around multi-source geospatial open data.</p>
+<div class="tags">
+<span>Python</span>
+<span>GIS</span>
+<span>H3</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="flood" data-category="mobile ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Rain, flooded homes and a rescue ring">
+<defs>
+<filter id="shadow-flood" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#75b9c1" flood-opacity=".3"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#dcf0f4"/>
+<ellipse cx="200" cy="216" rx="120" ry="10" fill="#75b9c1" opacity=".15"/>
+<circle cx="51" cy="40" r="14" fill="#fffdf8" opacity=".45"/>
+<path d="M345 32l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-flood)">
+<path d="M111 107l57-43 57 43" fill="#e5b7a0" stroke="#ba8e80" stroke-width="3" stroke-linejoin="round"/>
+<rect x="122" y="107" width="91" height="71" rx="5" fill="#fff8df"/>
+<rect x="155" y="130" width="24" height="45" rx="4" fill="#b9a2a6"/>
+<rect x="134" y="118" width="17" height="19" rx="3" fill="#b9ddea"/>
+<rect x="187" y="118" width="17" height="19" rx="3" fill="#b9ddea"/>
+<path d="M258 140l33-26 34 26" fill="#bdcda7" stroke="#90ac8c" stroke-width="3"/>
+<rect x="265" y="140" width="52" height="35" fill="#f9f4d9"/>
+<path d="M64 163q20-14 40 0t40 0 40 0 40 0 40 0 40 0 40 0v36H64Z" fill="#89c3d6"/>
+<path d="M64 183q20-14 40 0t40 0 40 0 40 0 40 0 40 0 40 0" fill="none" stroke="#c4e9ed" stroke-width="4"/>
+<path d="M66 60q-2-20 21-20 12-24 34-10 19-7 28 12 22 4 14 23H75q-10 0-9-5" fill="#b2d4df"/>
+<path d="M81 80l-4 10m23-9-4 10m26-10-4 10m26-10-4 10" stroke="#78b7cd" stroke-width="3" stroke-linecap="round"/>
+<circle cx="294" cy="91" r="24" fill="#fffdf7" stroke="#dd947e" stroke-width="9"/>
+<path d="M277 75l7 7m20 20 7 7m-7-34-7 7m-13 20-7 7" stroke="#fffdf7" stroke-width="7"/>
+</g>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>FloodSense</h3>
+<span>↗</span>
+</div>
+<p>An AI-powered flood monitoring and emergency-response application focused on preparedness in Malaysia.</p>
+<div class="tags">
+<span>Flutter</span>
+<span>Weather APIs</span>
+<span>Google Maps</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="rental" data-category="web ai">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Fleet analytics chart with a car">
+<defs>
+<filter id="shadow-rental" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#d5b866" flood-opacity=".3"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#fff0c6"/>
+<ellipse cx="200" cy="216" rx="120" ry="10" fill="#d5b866" opacity=".15"/>
+<circle cx="51" cy="40" r="14" fill="#fffdf8" opacity=".45"/>
+<path d="M345 32l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-rental)" transform="rotate(-4 190 118)">
+<rect x="81" y="44" width="223" height="130" rx="18" fill="#fffdf7" stroke="#d5b866" stroke-width="4"/>
+<rect x="98" y="59" width="71" height="16" rx="6" fill="#fff0c6"/>
+<path d="M104 149v-34m28 34v-54m28 54v-39m28 39V91m28 58v-78m28 78v-63m28 63v-92" stroke="#d5b866" stroke-width="12" stroke-linecap="round"/>
+<path d="M99 160h185" stroke="#e9dab0"/>
+</g>
+<g filter="url(#shadow-rental)">
+<path d="M150 180l18-28q6-8 20-8h60q14 0 21 10l16 24 23 7q9 3 9 14v13H136v-19q0-10 14-13" fill="#aabf94" stroke="#78977b" stroke-width="3"/>
+<path d="M176 154h30v25h-43zm39 0h28q9 0 14 8l12 17h-54z" fill="#edf3df"/>
+<circle cx="171" cy="211" r="15" fill="#657779"/>
+<circle cx="280" cy="211" r="15" fill="#657779"/>
+<circle cx="171" cy="211" r="7" fill="#dce6ce"/>
+<circle cx="280" cy="211" r="7" fill="#dce6ce"/>
+<rect x="295" y="191" width="14" height="6" rx="3" fill="#fff7d0"/>
+</g>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>KeretaSewa AI</h3>
+<span>↗</span>
+</div>
+<p>A decision-support dashboard for SME car rentals, covering fleet performance and AI recommendations.</p>
+<div class="tags">
+<span>React</span>
+<span>Vite</span>
+<span>Node.js</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="meow" data-category="games">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Decorative illustration for MeowGotchi">
+<defs>
+<linearGradient id="art-meow" x2="1" y2="1">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#c292bc"/>
+</linearGradient>
+<filter id="shadow-meow" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#c292bc" flood-opacity=".35"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#f1ddf0"/>
+<ellipse cx="200" cy="211" rx="112" ry="13" fill="#c292bc" opacity=".2"/>
+<circle cx="53" cy="49" r="18" fill="white" opacity=".45"/>
+<path d="M341 36l5 12 13 4-13 4-5 12-5-12-13-4 13-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-meow)">
+<path d="M137 110l-12-57 50 26q30-12 59 0l40-26-7 59q24 80-66 88-90-6-64-90" fill="#fff2d6" stroke="#dbb484" stroke-width="3"/>
+<path d="M139 93l-6-25 22 14m86 1 22-16-5 29" fill="#edb4bd"/>
+<ellipse cx="176" cy="126" rx="5" ry="8" fill="#65506e"/>
+<ellipse cx="230" cy="126" rx="5" ry="8" fill="#65506e"/>
+<path d="M195 141l8 7 8-7m-8 7q-12 12-19 0m19 0q12 12 19 0" stroke="#9b6d77" fill="none" stroke-width="3"/>
+<ellipse cx="161" cy="144" rx="11" ry="6" fill="#edb4bd"/>
+<ellipse cx="245" cy="144" rx="11" ry="6" fill="#edb4bd"/>
+</g>
+<path d="M83 92q-19-21-27 0t27 25q27-25 27-36-8-17-27 11" fill="#df91b4"/>
+</svg>
+<span class="badge">Solo project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>MeowGotchi</h3>
+<span>↗</span>
+</div>
+<p>A virtual-pet game built with Godot and GDScript.</p>
+<div class="tags">
+<span>Godot</span>
+<span>GDScript</span>
+<span>2D gameplay</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="fit" data-category="web">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Nutritious food, fitness equipment and a progress chart">
+<defs>
+<filter id="shadow-fit" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#a0b578" flood-opacity=".3"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#e5efcf"/>
+<ellipse cx="200" cy="216" rx="120" ry="10" fill="#a0b578" opacity=".15"/>
+<circle cx="51" cy="40" r="14" fill="#fffdf8" opacity=".45"/>
+<path d="M345 32l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-fit)">
+<ellipse cx="191" cy="125" rx="72" ry="65" fill="#fffdf7" stroke="#bfd19f" stroke-width="7"/>
+<ellipse cx="191" cy="125" rx="55" ry="49" fill="#f7f1db"/>
+<g fill="#9cb981">
+<circle cx="173" cy="113" r="17"/>
+<circle cx="153" cy="125" r="15"/>
+<circle cx="170" cy="136" r="15"/>
+<circle cx="181" cy="128" r="13"/>
+</g>
+<path d="M198 116q33-26 33-2 0 21-32 29z" fill="#edb86c"/>
+<circle cx="212" cy="154" r="14" fill="#df9785"/>
+<circle cx="224" cy="94" r="12" fill="#eabf6f"/>
+<path d="M276 71q-10-17-23-4-13 14 2 42 12 22 22 10 10 10 22-10 15-27 1-42-12-11-24 4" fill="#e09994"/>
+<path d="M276 69q-1-22 17-21-1 16-17 21" fill="#9caf78"/>
+<path d="M85 173h50" stroke="#a393bd" stroke-width="13" stroke-linecap="round"/>
+<rect x="70" y="154" width="17" height="38" rx="6" fill="#b6a4cc"/>
+<rect x="133" y="154" width="17" height="38" rx="6" fill="#b6a4cc"/>
+<rect x="61" y="159" width="12" height="28" rx="5" fill="#a393bd"/>
+<rect x="148" y="159" width="12" height="28" rx="5" fill="#a393bd"/>
+<rect x="280" y="147" width="66" height="53" rx="11" fill="#fffdf7" stroke="#bfd19f" stroke-width="3"/>
+<path d="M291 183l12-14 12 5 18-17" stroke="#91aa71" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>FitWell</h3>
+<span>↗</span>
+</div>
+<p>A health application with nutrition and progress-tracking features.</p>
+<div class="tags">
+<span>JavaScript</span>
+<span>HTML / CSS</span>
+<span>Trend charts</span>
+</div>
+</div>
+</button>
+<button class="project librarycard" data-project="path" data-category="mobile">
+<div class="projectart">
+<svg viewBox="0 0 400 240" role="img" aria-label="Candidate profile, job matching and a briefcase">
+<defs>
+<filter id="shadow-path" x="-30%" y="-30%" width="160%" height="180%">
+<feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#989fdb" flood-opacity=".3"/>
+</filter>
+</defs>
+<rect width="400" height="240" rx="20" fill="#e4e6fa"/>
+<ellipse cx="200" cy="216" rx="120" ry="10" fill="#989fdb" opacity=".15"/>
+<circle cx="51" cy="40" r="14" fill="#fffdf8" opacity=".45"/>
+<path d="M345 32l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fff9ce"/>
+<g filter="url(#shadow-path)" transform="rotate(-6 153 120)">
+<rect x="82" y="42" width="146" height="157" rx="16" fill="#fffdf8" stroke="#989fdb" stroke-width="4"/>
+<circle cx="119" cy="80" r="16" fill="#d1d5f1"/>
+<path d="M111 85q8-13 16 0" stroke="#989fdb" stroke-width="4" fill="none"/>
+<path d="M147 72h61m-61 13h43m-45 29h60m-90 0h14m-14 21h90m-90 21h70m-70 21h82" stroke="#c5c9e8" stroke-width="6" stroke-linecap="round"/>
+<text x="155" y="57" text-anchor="middle" font-family="Arial" font-size="8" fill="#8e8ba8">CANDIDATE PROFILE</text>
+</g>
+<g filter="url(#shadow-path)">
+<rect x="215" y="119" width="118" height="82" rx="14" fill="#c6b79c" stroke="#a89983" stroke-width="3"/>
+<path d="M250 120v-16q0-12 14-12h19q14 0 14 12v16" fill="none" stroke="#a89983" stroke-width="7"/>
+<path d="M215 145q59 25 118 0" fill="none" stroke="#a89983" stroke-width="3"/>
+<rect x="266" y="150" width="17" height="13" rx="3" fill="#fff6d9"/>
+<circle cx="282" cy="71" r="24" fill="#fffdf8" stroke="#989fdb" stroke-width="4"/>
+<path d="M298 88l18 18" stroke="#989fdb" stroke-width="8" stroke-linecap="round"/>
+<path d="M272 71l7 7 14-15" stroke="#a7ba94" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+</svg>
+<span class="badge">Team project</span>
+</div>
+<div class="cardbody">
+<div class="projecttop">
+<h3>PathSeeker</h3>
+<span>↗</span>
+</div>
+<p>A mobile application for employment discovery and skill development.</p>
+<div class="tags">
+<span>Keyword matching</span>
+<span>Haversine distance</span>
+<span>Mobile development</span>
+</div>
+</div>
+</button>
+</div>
+<p class="collectionnote">Each illustration is a visual introduction. Open the card for my contribution, technologies, and repository where available.</p>
+</section>
+<section id="experience" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">03 / Learning through doing</div>
+<h2>My first industry chapter.</h2>
+</div>
+<p>A voluntary internship in quality assurance and ERP development.</p>
+</div>
+<div class="experiencecard">
+<div>
+<span class="volunteerbadge">Voluntary internship · Jul–Sep 2026</span>
+<h3>Keyway Digital Labs Sdn. Bhd.</h3>
+<p class="role">Software Engineering Intern (QA &amp; ERP Development)</p>
+<ul>
+<li>Performed system-wide manual testing of <strong>KeywayEHS</strong>, covering Incidents, HIRARC, Permit-to-Work, Safety Inspection, machinery, PPE, Legal Register, Safety Meeting, Visitors, and other modules.</li>
+<li>Authored and logged <strong>916 test cases</strong> in a test case management system; identified <strong>approximately 130 bugs</strong>.</li>
+<li>Elicited requirements directly from the HR department and developed custom features using <strong>Odoo’s framework, Python, and XML</strong>.</li>
+<li>Debugged and tested the Odoo changes against HR requirements.</li>
+</ul>
+</div>
+<div class="metrics">
+<div class="metric">
+<strong>916</strong>
+<span>Test cases authored and logged</span>
+</div>
+<div class="metric">
+<strong>~130</strong>
+<span>Bugs identified before release (approx.)</span>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">04 / My building blocks</div>
+<h2>Tools, with a little context.</h2>
+</div>
+<p>What I use, what I’ve worked on, and where you can see it.</p>
+</div>
+<div class="skills">
+<article class="skillcard">
+<span class="skillicon">✿</span>
+<h3>Interfaces & mobile</h3>
+<p class="skilltools">React · TypeScript · JavaScript · HTML/CSS · Flutter · Dart · React Native (Expo)</p>
+<p>Mobile health apps, fleet dashboards, community functions, and trend visualisations.</p>
+<div class="evidence">
+<button data-project="pulse">PulseCheck ↗</button>
+<button data-project="wick">Wick ↗</button>
+<button data-project="rental">KeretaSewa AI ↗</button>
+<button data-project="fit">FitWell ↗</button>
+</div>
+</article>
+<article class="skillcard">
+<span class="skillicon">⌘</span>
+<h3>Backend & databases</h3>
+<p class="skilltools">Python · FastAPI · Node.js · SQL · Firebase · PostgreSQL · MySQL · MongoDB</p>
+<p>API integration, authentication, CRUD, AI request routing, and audit logging.</p>
+<div class="evidence">
+<button data-project="aegis">AegisAI ↗</button>
+<button data-project="rental">KeretaSewa AI ↗</button>
+</div>
+</article>
+<article class="skillcard">
+<span class="skillicon">✦</span>
+<h3>AI & camera sensing</h3>
+<p class="skilltools">XGBoost · SHAP · scikit-learn · LiteLLM · Presidio · MediaPipe · PPG/rPPG</p>
+<p>Interpretable predictions, sensitive-data masking, physiological signals, and webcam interaction.</p>
+<div class="evidence">
+<button data-project="pulse">PulseCheck ↗</button>
+<button data-project="aegis">AegisAI ↗</button>
+<button data-project="wick">Wick ↗</button>
+<button data-project="kitchen">Rhythm Kitchen ↗</button>
+</div>
+</article>
+<article class="skillcard">
+<span class="skillicon">⬡</span>
+<h3>Geospatial & matching</h3>
+<p class="skilltools">H3 · GIS · EPSG:3375 · Haversine distance · Keyword matching</p>
+<p>Combining seven spatial datasets, standardising coordinates, and matching jobs by relevance and distance.</p>
+<div class="evidence">
+<button data-project="geo">GeoQoE Pulse ↗</button>
+<button data-project="path">PathSeeker ↗</button>
+</div>
+</article>
+<article class="skillcard">
+<span class="skillicon">ฅ</span>
+<h3>Games & creative tools</h3>
+<p class="skilltools">Godot · GDScript · Figma · Photography</p>
+<p>Solo virtual-pet and webcam cooking games; interface design and visual experimentation.</p>
+<div class="evidence">
+<button data-project="meow">MeowGotchi ↗</button>
+<button data-project="kitchen">Rhythm Kitchen ↗</button>
+</div>
+</article>
+<article class="skillcard">
+<span class="skillicon">✓</span>
+<h3>Quality & engineering</h3>
+<p class="skilltools">Black-box testing · Equivalence partitioning · BVA · Decision tables · Selenium · Appium · Git · Docker · Odoo · Python/XML · Power BI</p>
+<p>System-wide KeywayEHS manual testing, test-case management, HR requirements elicitation, Odoo customisation, debugging, and testing.</p>
+<div class="evidence">
+</div>
+</article>
+</div>
+</section>
+<section id="awards" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">05 / A few milestones</div>
+<h2>Challenges I’ve taken on.</h2>
+</div>
+</div>
+<div class="awardgrid">
+<article class="award">
+<strong>Top 17 ✦</strong>
+<h3>ASEAN GeoAI Fusion 2026</h3>
+<p>Finalist</p>
+</article>
+<article class="award">
+<strong>Finalist ✦</strong>
+<h3>Programming League National 2025</h3>
+<p>Open Category</p>
+</article>
+</div>
+</section>
+<section id="beyond" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">06 / Outside the editor</div>
+<h2>There’s more to my world.</h2>
+</div>
+<p>A few things that keep me curious.</p>
+</div>
+<div class="aboutpanel">
+<div>
+<h3>Building things is one kind<br>of creativity. <span class="scribble">♫</span>
+</h3>
+<p>I’m a final-year Software Engineering student at Universiti Malaya. I enjoy exploring new ideas, designing app experiences, and seeing them become something people can use.</p>
+<p>Away from projects, I play music, take photographs, learn languages, and get a little lost in game worlds.</p>
+<p style="font-size:11px">The music switch plays a gentle original piano loop. Sound is optional—make yourself at home.</p>
+</div>
+<div class="interesttiles">
+<div class="interesttile">
+<span class="icon">♫</span>
+<h4>Music in many forms</h4>
+<p>Piano, violin, guitar, trombone, and zhongruan.</p>
+</div>
+<div class="interesttile">
+<span class="icon">◎</span>
+<h4>Through my lens</h4>
+<p>Photography and noticing the little details around me.</p>
+</div>
+<div class="interesttile">
+<span class="icon">✿</span>
+<h4>Little game worlds</h4>
+<p>Stardew Valley, Where Winds Meet, and Teamfight Tactics.</p>
+</div>
+<div class="interesttile">
+<span class="icon">한</span>
+<h4>A semester abroad</h4>
+<p>Sejong University, South Korea.<br>September–December 2025.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="languages" class="section">
+<div class="sectionhead">
+<div>
+<div class="eyebrow">07 / Words across worlds</div>
+<h2>Languages I live and learn in.</h2>
+</div>
+<p>Some familiar, some still unfolding.</p>
+</div>
+<div class="languages">
+<article class="language pink">
+<div class="langsymbol">中</div>
+<h3>Chinese / Mandarin</h3>
+<span class="level">Native</span>
+<p>A language I grew up with.</p>
+</article>
+<article class="language blue">
+<div class="langsymbol">Aa</div>
+<h3>English</h3>
+<span class="level">Conversational</span>
+<p>One of the languages I converse in.</p>
+</article>
+<article class="language green">
+<div class="langsymbol">Ms</div>
+<h3>Malay</h3>
+<span class="level">Conversational</span>
+<p>One of the languages I converse in.</p>
+</article>
+<article class="language purple">
+<div class="langsymbol">한</div>
+<h3>Korean</h3>
+<span class="level">Daily-life conversation</span>
+<p>Exchange at Sejong University, South Korea · Sep–Dec 2025.</p>
+</article>
+<article class="language yellow">
+<div class="langsymbol">あ</div>
+<h3>Japanese</h3>
+<span class="level">Learning</span>
+<p>Self-study and an entry-level course from Fast Offer.</p>
+</article>
+<article class="language peach">
+<div class="langsymbol">Ñ</div>
+<h3>Spanish</h3>
+<span class="level">Learning</span>
+<p>Self-study and Duolingo.</p>
+</article>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div>
+<div class="eyebrow">08 / Your turn</div>
+<h2>Let’s build something useful.</h2>
+<p>I’m looking for an internship where I can contribute, learn from a team, and grow as a software engineer.</p>
+<a class="contactemail" href="mailto:tanweiru2004@gmail.com">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="2" y="4" width="20" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>tanweiru2004@gmail.com</a>
+</div>
+<a href="mailto:tanweiru2004@gmail.com" class="btn">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="2" y="4" width="20" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+<path d="m3 6 9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>Email me ↗</a>
+</section>
+</main>
+<footer class="footer">
+<span>Tan Wei Ru · Code, music, and a little curiosity.</span>
+<div class="footerlinks">
+<a href="https://github.com/weiru917" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.07c-3.08.67-3.73-1.3-3.73-1.3-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.07-.68.07-.68 1.11.08 1.69 1.14 1.69 1.14.99 1.69 2.6 1.2 3.23.92.1-.72.39-1.2.71-1.48-2.46-.28-5.05-1.23-5.05-5.49 0-1.22.44-2.21 1.14-2.99-.11-.28-.49-1.41.11-2.94 0 0 .93-.3 3.05 1.14a10.64 10.64 0 0 1 5.55 0c2.12-1.44 3.05-1.14 3.05-1.14.6 1.53.22 2.66.11 2.94.71.78 1.14 1.77 1.14 2.99 0 4.27-2.59 5.2-5.06 5.48.4.35.75 1.02.75 2.06v3.06c0 .3.2.65.76.54A11.1 11.1 0 0 0 12 .9Z"/>
+</svg>GitHub ↗</a>
+<a href="https://www.linkedin.com/in/tanweiru917" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="1" y="1" width="22" height="22" rx="4" fill="currentColor"/>
+<circle cx="6.5" cy="7" r="1.6" fill="#fffdf9"/>
+<path d="M5 10h3v9H5zM10 10h2.8v1.2c.6-.9 1.5-1.5 2.8-1.5 2.5 0 3.5 1.5 3.5 4.2V19h-3v-4.5c0-1.3-.3-2.2-1.6-2.2-1.2 0-1.5.9-1.5 2.2V19h-3z" fill="#fffdf9"/>
+</svg>LinkedIn ↗</a>
+<a href="#">Back to top ↑</a>
+</div>
+</footer>
+</div>
+<div class="petdock">
+<span class="petbubble" id="petBubble" aria-live="polite">A small cat for company. ♡</span>
+<button class="petbutton" id="petButton" aria-label="Say hello to the studio cat">
+<svg viewBox="0 0 60 60" aria-hidden="true">
+<path d="M12 27L8 8l18 11h10L52 8l-4 19q12 29-18 28Q0 56 12 27" fill="#e6bc86"/>
+<path d="M12 20l-1-7 8 7m23 0 8-7-2 9" fill="#efb5b3"/>
+<circle cx="21" cy="33" r="2.5" fill="#665079"/>
+<circle cx="39" cy="33" r="2.5" fill="#665079"/>
+<path d="M26 40l4 4 4-4m-4 4q-8 7-10 0m10 0q8 7 10 0" fill="none" stroke="#8d6271" stroke-width="2"/>
+</svg>
+</button>
+</div>
+<div class="toast" id="toast" hidden role="status">
+</div>
+<dialog id="detail" aria-labelledby="modalTitle">
+<button class="modalclose" aria-label="Close details">×</button>
+<div id="modalContent">
+</div>
+</dialog>
+<script src="./scripts/main.js" defer>
+</script>
+</body>
+</html>
