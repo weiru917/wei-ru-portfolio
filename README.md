@@ -110,7 +110,7 @@ Replace `assets/documents/Tan-Wei-Ru-Resume.pdf` with the latest PDF while keepi
 
 ### Contact links
 
-The email address is shown on the page and links through `mailto:`. GitHub and LinkedIn links are in the introduction and footer. The phone number is available in the contact section and downloadable résumé.
+The email address is shown on the page and links through `mailto:`. GitHub and LinkedIn links are in the introduction and footer. The phone number is available in the downloadable résumé.
 
 ### Music
 
