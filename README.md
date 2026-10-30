@@ -6,9 +6,9 @@ A responsive static website built with **HTML, CSS, and vanilla JavaScript**. No
 
 ## Features
 
-- Three featured projects and a complete, filterable collection of ten projects.
-- Illustrated project cards and dialogs describing individual contributions and technologies.
-- Voluntary internship experience, technical skills linked to projects, and competition achievements.
+- Three recent featured projects (Wick, GeoQoE Pulse, and AegisAI) and a complete, filterable collection of eight projects.
+- Illustrated project cards and dialogs describing individual contributions and technologies. The collection follows the résumé order: Wick, GeoQoE Pulse, AegisAI, and KeretaSewa AI; then FloodSense, PathSeeker, MeowGotchi, and FitWell based on contribution depth and internship relevance.
+- QA and ERP internship experience, technical skills linked to projects, and competition achievements.
 - Language proficiency, Sejong University exchange experience, and creative interests.
 - Labelled GitHub, LinkedIn, and email links, plus a downloadable résumé.
 - Optional original piano-style audio generated with the Web Audio API. Music starts only after a visitor turns it on and pauses when the tab is hidden.
@@ -110,7 +110,7 @@ Replace `assets/documents/Tan-Wei-Ru-Resume.pdf` with the latest PDF while keepi
 
 ### Contact links
 
-The email address is shown on the page and links through `mailto:`. GitHub and LinkedIn links are in the introduction and footer. The phone number is in the downloadable résumé.
+The email address is shown on the page and links through `mailto:`. GitHub and LinkedIn links are in the introduction and footer. The phone number is available in the contact section and downloadable résumé.
 
 ### Music
 
@@ -120,4 +120,4 @@ Edit the `melody` array and audio settings in `scripts/main.js` to change the or
 
 Open the site on desktop and mobile. Try each filter, a project dialog, the résumé download, contact links, and music on/off. Verify that your current project descriptions, awards, and availability are accurate.
 
-Automated interaction checks were performed during preparation. A browser rendering check was unavailable in the preparation environment, so review the final appearance in your browser before publishing.
+Preview the page after content changes and verify desktop/mobile layouts, project dialogs and links, filters, and the résumé download before publishing.

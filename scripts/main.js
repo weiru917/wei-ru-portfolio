@@ -1,115 +1,134 @@
 // Project metadata used by detail dialogs.
 const projects= {
-  "pulse": {
-    "name": "PulseCheck",
-    "label": "FINAL-YEAR PROJECT · ONGOING",
-    "intro": "A mobile cardiac-health application combining CVD risk prediction, explainable risk factors, and PPG signal processing.",
-    "contribution": "Developing the Flutter frontend and FastAPI backend. Trained Logistic Regression, Random Forest, and XGBoost models and integrated SHAP explanations, alongside vitals tracking and medication scheduling.",
-    "focus": "How can a mobile interface make prediction results and their contributing factors understandable to a non-technical user?",
-    "tech": ["Flutter", "FastAPI", "XGBoost", "SHAP", "Firebase"],
-    "category": "mobile ai"
-  }
-  ,
-  "aegis": {
-    "name": "AegisAI",
-    "label": "HACK ATTACK 2026 · TWO-PERSON TEAM",
-    "intro": "A vendor-neutral enterprise AI governance gateway with sensitive-data masking, model routing, audit logging, and compliance reporting.",
-    "contribution": "Architected the backend and contributed to the frontend. The gateway uses Presidio and spaCy for PII masking and LiteLLM for routing prompts across models.",
-    "focus": "How should a request move through masking, routing, and logging while keeping the system independent of a single model vendor?",
-    "tech": ["Python", "FastAPI", "React", "TypeScript", "LiteLLM", "Presidio"],
-    "category": "web ai"
-  }
-  ,
+  "wick": {
+    "name": "Wick",
+    "label": "CODENECTION 2026 · TWO-PERSON TEAM",
+    "intro": "A stress and workload manager with camera-based pulse estimation, adaptive focus sessions, guided breathing and peer support.",
+    "contribution": "Developed front-camera rPPG and fingertip PPG processing for pulse estimation, signal-quality checks and personal baseline calibration, integrated with adaptive focus sessions and guided breathing. Implemented Circles features for invite-code connections, peer support and shared recovery challenges within a two-person team.",
+    "focus": "Checking signal quality and calibrating a personal baseline before connecting pulse estimates to recovery and focus experiences.",
+    "tech": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Supabase",
+      "VisionCamera"
+    ],
+    "category": "mobile ai",
+    "symbol": "◌",
+    "url": "https://github.com/shino-c/Wick",
+    "prototype": "https://goodquestion-wick.expo.app/"
+  },
   "geo": {
     "name": "GeoQoE Pulse",
-    "label": "ASEAN GEOAI FUSION 2026 · COMPLETED TEAM PROJECT",
-    "intro": "A completed team project for network-quality intelligence, built around multi-source geospatial open data.",
-    "contribution": "Built a 10-stage pipeline that processes seven geospatial datasets into unified spatial-temporal features. Standardised coordinate systems to EPSG:3375 and aggregated data using H3 at resolution 8.",
-    "focus": "How do datasets with different spatial structures become consistent features for network-quality analysis?",
-    "tech": ["Python", "GIS", "H3", "EPSG:3375", "Ookla Open Data", "OpenStreetMap"],
-    "category": "ai"
-  }
-  ,
+    "label": "ASEAN GEOAI FUSION 2026 · TOP 17 FINALIST",
+    "intro": "A mobile QoE intelligence system integrating network and geospatial datasets for network quality analysis.",
+    "contribution": "Built a 10-stage data and GIS pipeline integrating network and geospatial datasets; standardised coordinate systems and aggregated geospatial layers into H3 cells for network quality analysis. Integrated LLM APIs with web retrieval to surface source-linked events and holidays as possible context for network planning.",
+    "focus": "Combining consistent geospatial features with source-linked context to support network planning.",
+    "tech": [
+      "Python",
+      "GeoPandas",
+      "GIS",
+      "H3",
+      "JavaScript",
+      "LLM APIs"
+    ],
+    "category": "ai",
+    "url": "https://github.com/weiru917/geoqoe_pulse",
+    "prototype": "https://weiru917.github.io/geoqoe_pulse/"
+  },
+  "aegis": {
+    "name": "AegisAI",
+    "label": "HACK ATTACK 2026",
+    "intro": "An enterprise AI governance gateway with sensitive-data detection and masking, LLM-provider routing and persistent audit logging.",
+    "contribution": "Developed a FastAPI backend for sensitive-data detection and masking using regex and Presidio/spaCy, with LLM-provider routing and fallback handling. Implemented JWT authentication, backend role checks and persistent audit logging.",
+    "focus": "Moving requests through data masking and provider routing while enforcing authentication, role checks and an audit trail.",
+    "tech": [
+      "Python",
+      "FastAPI",
+      "React",
+      "TypeScript",
+      "Microsoft Presidio",
+      "spaCy"
+    ],
+    "category": "web ai",
+    "url": "https://github.com/Yanjie0910/AegisAI"
+  },
   "rental": {
     "name": "KeretaSewa AI",
     "label": "UMHACKATHON 2026",
-    "intro": "A decision-support dashboard for SME car rentals, covering fleet performance and AI recommendations.",
-    "contribution": "Built a React dashboard with Recharts visualisations. Implemented CSV ingestion with deduplication, Firestore CRUD and authentication, and PDF report export.",
-    "focus": "How can a rental operator explore revenue, utilisation, idle days, and demand patterns in one interface?",
-    "tech": ["React", "Vite", "Node.js", "Firebase", "Recharts", "Tailwind CSS"],
-    "category": "web ai"
-  }
-  ,
-  "kitchen": {
-    "name": "Rhythm Kitchen",
-    "label": "SOLO PROJECT · COMPUTER VISION",
-    "intro": "A webcam-controlled cooking game using MediaPipe mesh tracking.",
-    "contribution": "Designed and developed this solo game, integrating webcam input and MediaPipe mesh tracking into the gameplay.",
-    "focus": "Turning camera input into a playable interaction.",
-    "tech": ["MediaPipe", "Webcam", "Computer vision"],
-    "category": "games ai",
-    "symbol": "◉",
-    "url": null
-  }
-  ,
-  "wick": {
-    "name": "Wick",
-    "label": "TEAM PROJECT · STRESS & WORKLOAD",
-    "intro": "A mobile stress and workload manager connecting camera sensing, focus sessions and community features.",
-    "contribution": "Implemented PPG-based stress estimation, Desk Mode using rPPG and motion detection for stress-score estimation, and the Circles community function.",
-    "focus": "Connecting physiological signals and motion cues to focus-session feedback.",
-    "tech": ["React Native", "Expo", "PPG / rPPG", "Motion detection"],
-    "category": "mobile ai",
-    "symbol": "◌",
-    "url": "https://github.com/shino-c/Wick"
-  }
-  ,
+    "intro": "A decision intelligence dashboard for SME car rentals, presenting revenue, utilisation, idle days and booking patterns.",
+    "contribution": "Developed the React frontend and analytics dashboard to present monthly revenue, utilisation, idle-day summaries and booking patterns from rental records. Implemented CSV import with duplicate checks against stored bookings, Firestore data operations, Firebase Authentication and PDF report generation.",
+    "focus": "Turning rental records into useful operational summaries while checking imports against existing bookings.",
+    "tech": [
+      "React",
+      "Firebase Firestore",
+      "Firebase Authentication",
+      "Recharts",
+      "PapaParse",
+      "jsPDF"
+    ],
+    "category": "web ai",
+    "url": "https://github.com/weiru917/keretasewa-ai"
+  },
   "flood": {
     "name": "FloodSense",
     "label": "KITAHACK · TEAM PROJECT",
     "intro": "An AI-powered flood monitoring and emergency-response application focused on preparedness in Malaysia.",
     "contribution": "Implemented the rainfall anomaly service, safety checklists and nearest-shelter navigation.",
     "focus": "Making rainfall information and shelter access useful to people preparing for floods.",
-    "tech": ["Flutter", "Weather APIs", "Google Maps"],
+    "tech": [
+      "Flutter",
+      "Weather APIs",
+      "Google Maps"
+    ],
     "category": "mobile ai",
     "symbol": "≈",
     "url": "https://github.com/GuakLaLa/KitaHack_BalikKampung"
-  }
-  ,
-  "meow": {
-    "name": "MeowGotchi",
-    "label": "SOLO PROJECT · GAME DEVELOPMENT",
-    "intro": "A virtual-pet game built with Godot and GDScript.",
-    "contribution": "Developed this solo project, with virtual-pet hunger, happiness and energy mechanics and feeding and play interactions.",
-    "focus": "Bringing a virtual companion to life through state and interaction.",
-    "tech": ["Godot", "GDScript", "2D gameplay"],
-    "category": "games",
-    "symbol": "ฅ",
-    "url": "https://github.com/weiru917/MeowGotchi"
-  }
-  ,
-  "fit": {
-    "name": "FitWell",
-    "label": "ACADEMIC TEAM PROJECT",
-    "intro": "A health application with nutrition and progress-tracking features.",
-    "contribution": "Responsible for implementing the trend charts.",
-    "focus": "Helping users understand change over time through visualisation.",
-    "tech": ["JavaScript", "HTML / CSS", "Trend charts"],
-    "category": "web",
-    "symbol": "↗",
-    "url": "https://github.com/SHUHUI22/FitWell"
-  }
-  ,
+  },
   "path": {
     "name": "PathSeeker",
     "label": "ACADEMIC TEAM PROJECT · MOBILE",
     "intro": "A mobile application for employment discovery and skill development.",
     "contribution": "Implemented job matching based on keywords and Haversine distance rules.",
     "focus": "Combining relevance and geographic distance in job discovery.",
-    "tech": ["Keyword matching", "Haversine distance", "Mobile development"],
+    "tech": [
+      "Keyword matching",
+      "Haversine distance",
+      "Mobile development"
+    ],
     "category": "mobile",
     "symbol": "⌖",
     "url": "https://github.com/RextonRZ/JP-PathSeeker"
+  },
+  "meow": {
+    "name": "MeowGotchi",
+    "label": "SOLO PROJECT · GAME DEVELOPMENT",
+    "intro": "A virtual-pet game built with Godot and GDScript.",
+    "contribution": "Developed this solo project, with virtual-pet hunger, happiness and energy mechanics and feeding and play interactions.",
+    "focus": "Bringing a virtual companion to life through state and interaction.",
+    "tech": [
+      "Godot",
+      "GDScript",
+      "2D gameplay"
+    ],
+    "category": "games",
+    "symbol": "ฅ",
+    "url": "https://github.com/weiru917/MeowGotchi"
+  },
+  "fit": {
+    "name": "FitWell",
+    "label": "ACADEMIC TEAM PROJECT",
+    "intro": "A health application with nutrition and progress-tracking features.",
+    "contribution": "Responsible for implementing the trend charts.",
+    "focus": "Helping users understand change over time through visualisation.",
+    "tech": [
+      "JavaScript",
+      "HTML / CSS",
+      "Trend charts"
+    ],
+    "category": "web",
+    "symbol": "↗",
+    "url": "https://github.com/SHUHUI22/FitWell"
   }
 }
 ;
@@ -125,7 +144,7 @@ function openModal(html) {
 function showProject(key) {
   const p=projects[key];
   const art=document.querySelector('.librarycard[data-project="'+key+'"] .projectart').innerHTML;
-  openModal('<div class="eyebrow">'+p.label+'</div><h2 id="modalTitle">'+p.name+'</h2><div class="modalart">'+art+'</div><p>'+p.intro+'</p><h4>My contribution</h4><p>'+p.contribution+'</p><h4>Engineering focus</h4><p>'+p.focus+'</p><div class="tags">'+p.tech.map(x=>'<span>'+x+'</span>').join('')+'</div>'+(p.url?'<div class="modalactions"><a class="btn" href="'+p.url+'" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a></div>':'')+'<p class="modalnote">'+(key==='kitchen'?'Solo project · Private repository. A gameplay video can be added here.':'Decorative project artwork. Real screenshots and walkthroughs can be added as the portfolio develops.')+(key==='wick'?' Stress scores are estimates; no clinical validation is claimed.':'')+'</p>')
+  openModal('<div class="eyebrow">'+p.label+'</div><h2 id="modalTitle">'+p.name+'</h2><div class="modalart">'+art+'</div><p>'+p.intro+'</p><h4>My contribution</h4><p>'+p.contribution+'</p><h4>Engineering focus</h4><p>'+p.focus+'</p><div class="tags">'+p.tech.map(x=>'<span>'+x+'</span>').join('')+'</div>'+(p.url?'<div class="modalactions">'+(p.prototype?'<a class="btn secondary" href="'+p.prototype+'" target="_blank" rel="noopener noreferrer">Try the prototype ↗</a>':'')+'<a class="btn" href="'+p.url+'" target="_blank" rel="noopener noreferrer">Explore the repository ↗</a></div>':'')+(key==='wick'?'<p class="modalnote">Pulse estimates are for personal wellness; no clinical validation is claimed.</p>':''))
 }
 document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>showProject(b.dataset.project)));
 document.querySelector('.modalclose').addEventListener('click',()=>dialog.close());
@@ -139,10 +158,10 @@ document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=> 
   document.querySelectorAll('.filter').forEach(x=> {
     x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))
   }
-  );document.querySelectorAll('.librarycard').forEach(c=>c.hidden=b.dataset.filter!=='all'&&!c.dataset.category.split(' ').includes(b.dataset.filter));document.getElementById('projectCount').textContent=document.querySelectorAll('.librarycard:not([hidden])').length+' projects'
+  );document.querySelectorAll('.librarycard').forEach(c=>c.hidden=b.dataset.filter!=='all'&&!c.dataset.category.split(' ').includes(b.dataset.filter));const count=document.querySelectorAll('.librarycard:not([hidden])').length;document.getElementById('projectCount').textContent=count+(count===1?' project':' projects')
 }
 ));
-document.getElementById('resumeButton').addEventListener('click',()=>openModal('<div class="eyebrow">RÉSUMÉ / A QUICK INTRODUCTION</div><h2 id="modalTitle">Tan Wei Ru</h2><p>Final-year Bachelor of Computer Science (Software Engineering) student at Universiti Malaya. CGPA: 3.79/4.0. Expected graduation: 2027.</p><h4>Voluntary internship</h4><p>Software Engineering Intern (QA &amp; ERP Development) at Keyway Digital Labs Sdn. Bhd. · July–September 2026.</p><h4>International exchange</h4><p>Sejong University, South Korea · September–December 2025.</p><h4>Competitions</h4><p>ASEAN GeoAI Fusion 2026 — Top 17 finalist.<br>Programming League National 2025 — Open Category finalist.</p><div class="modalactions"><a class="btn" href="'+resumeUrl+'" download="Tan-Wei-Ru-Resume.pdf">Download résumé ↓</a><a class="btn secondary" href="mailto:tanweiru2004@gmail.com">Say hello ↗</a></div>'));
+document.getElementById('resumeButton').addEventListener('click',()=>openModal('<div class="eyebrow">RÉSUMÉ / A QUICK INTRODUCTION</div><h2 id="modalTitle">Tan Wei Ru</h2><p>Final-year Software Engineering student at Universiti Malaya with internship experience in software testing and Odoo ERP development. Builds web and mobile applications using Python, React and React Native, translating user requirements into working features.</p><h4>Internship availability</h4><p>Seeking a six-month full-stack development internship, available from <strong>25 January 2027</strong>.</p><h4>Education</h4><p>Bachelor of Computer Science (Software Engineering), Universiti Malaya · 2023–2027 (Expected).<br>CGPA: 3.79/4.0.</p><h4>Experience</h4><p>QA &amp; ERP Developer Intern at Keyway Digital Labs Sdn. Bhd. · July–September 2026.<br>916 black-box test cases, 130+ bugs reported, and Odoo HR customisation.</p><h4>Competitions</h4><p>ASEAN GeoAI Fusion 2026 — Top 17 Finalist.<br>Programming League National (PLN) 2025 — Open Category National Finalist.</p><p><a href="mailto:tanweiru2004@gmail.com">tanweiru2004@gmail.com</a> · <a href="tel:+601157530889">011-5753 0889</a></p><div class="modalactions"><a class="btn" href="'+resumeUrl+'" download="Tan-Wei-Ru-Resume.pdf">Download résumé ↓</a><a class="btn secondary" href="mailto:tanweiru2004@gmail.com">Say hello ↗</a></div>'));
 // Interactive studio cat.
 const sayings=['A small cat for company. ♡','You found my little studio cat!','Tiny paws. Big project energy.','A little break is a good idea.','Thanks for stopping by! ♫'];
 let petIndex=0;
