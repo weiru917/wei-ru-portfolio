@@ -270,11 +270,6 @@ h1 em {
 .scribble {
   color:#d799b5
 }
-.featuredprojects {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px
-}
 .project {
   border:1px solid var(--line);
   border-radius:21px;
@@ -348,37 +343,13 @@ h1 em {
   padding:4px 7px;
   color:#776b87
 }
-.filters {
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin:0 0 22px
-}
-.filter {
-  border:1px solid var(--line);
-  border-radius:25px;
-  background:white;
-  padding:7px 15px;
-  font-size:10px;
-  color:var(--muted)
-}
-.filter.active {
-  background:var(--purple);
-  border-color:var(--purple);
-  color:white
-}
 .projects {
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:22px
 }
-.librarycard .cardbody p {
+.projectcard .cardbody p {
   min-height:58px
-}
-.collectionnote {
-  font-size:10px;
-  color:var(--muted);
-  margin-top:19px
 }
 .experiencecard {
   background:#edf2fb;
@@ -440,7 +411,7 @@ h1 em {
 }
 .skills {
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(2,minmax(0,1fr));
   gap:17px
 }
 .skillcard {
@@ -482,7 +453,7 @@ h1 em {
   flex-wrap:wrap;
   margin-top:14px
 }
-.evidence button {
+.evidence button,.evidence a {
   background:transparent;
   border:0;
   padding:0;
@@ -795,17 +766,8 @@ dialog h4 {
   .heroart {
     height:370px
   }
-  .featuredprojects,.projects,.skills {
+  .projects,.skills {
     grid-template-columns:repeat(2,1fr)
-  }
-  .featuredcard:last-child {
-    grid-column:1/-1;
-    max-width:100%
-  }
-  .featuredcard:last-child {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center
   }
   .identitystrip {
     flex-wrap:wrap
@@ -895,14 +857,10 @@ dialog h4 {
     font-size:10px;
     max-width:120px
   }
-  .featuredprojects,.projects,.skills {
+  .projects,.skills {
     grid-template-columns:1fr
   }
-  .featuredcard:last-child {
-    display:block;
-    grid-column:auto
-  }
-  .cardbody p,.librarycard .cardbody p {
+  .cardbody p,.projectcard .cardbody p {
     min-height:0
   }
   .experiencecard {
@@ -1047,3 +1005,7 @@ dialog h4 {
 .educationpanel h3 { margin:8px 0; }
 .educationpanel p { font-size:13px; line-height:1.7; margin:4px 0; }
 @media(max-width:620px) { .educationpanel { flex-direction:column; gap:8px; padding:24px; } }
+
+.projectteam { display:block; margin-top:6px; color:var(--purple); font-size:10px; }
+.contributions { padding-left:20px; color:var(--muted); font-size:13px; line-height:1.8; }
+.contributions li + li { margin-top:8px; }
